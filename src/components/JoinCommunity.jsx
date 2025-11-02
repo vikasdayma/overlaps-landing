@@ -122,7 +122,7 @@
 // }
 
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 // You can place this SVG component inside JoinComminity.jsx or import it
 const ArrowIcon = () => (
   <svg 
@@ -154,10 +154,11 @@ function JoinComminity() {
           <h1 className="text-5xl md:text-7xl font-normal leading-tight mb-8">
             Join The <br /> Community Of <br /> Million
           </h1>
-          <button className="bg-[#aaff00]  text-black font-bold py-4 px-8 rounded-3xl flex items-center gap-3 transition-transform hover:scale-105">
-            JOIN NOW 
-            <ArrowIcon />
-          </button>
+            <Link to='/book-meeting'>
+                    <button className="transition-all duration-300 ease-in-out border border-white/25    hover:text-black hover:border-[#dafe45] hover:scale-105 bg-[#daff45]  font-bold text-black w-full lg:w-full rounded-full px-6 py-3 2xl:px-4 2xl:py-4 text-sm 2xl:text-lg transition">
+                    Join Now
+                    </button>
+                    </Link>
         </div>
 
         {/* Right Content Block (Stats) */}
@@ -180,7 +181,7 @@ function JoinComminity() {
               </div>
             </div>
          <p className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#9897FF] to-[#000000] bg-clip-text text-transparent">
-  11 Billion
+  11K
 </p>
 
           </div>
@@ -208,7 +209,7 @@ function JoinComminity() {
                 <div className="h-px flex-grow bg-gray-600"></div>
               </div>
             </div>
-            <p className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#99989B] to-[#000000] bg-clip-text text-transparent">4100+</p>
+            <p className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#99989B] to-[#000000] bg-clip-text text-transparent">41+</p>
           </div>
         </div>
 

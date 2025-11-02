@@ -205,7 +205,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const features = [
@@ -293,9 +293,15 @@ export default function Automation() {
           </div>
 
           <div className="flex justify-center lg:justify-start w-full">
-            <button className="bg-[#D6EF37] font-bold text-black w-full lg:w-1/2 rounded-full px-6 py-3 2xl:px-8 2xl:py-4 text-sm 2xl:text-lg transition">
+            <Link to='/book-meeting'>
+            <button className="transition-all duration-300 ease-in-out 
+            border border-white/25    hover:text-black
+             hover:border-[#dafe45] hover:scale-105 bg-[#daff45] 
+              font-bold text-black w-full lg:w-full rounded-full
+               px-6 py-3 2xl:px-4 2xl:py-4 text-sm 2xl:text-lg transition">
               Automate My Tasks Now
             </button>
+            </Link>
           </div>
         </div>
 

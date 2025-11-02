@@ -158,9 +158,10 @@
 
 import React, { useState } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 function Button({ children, className = "", variant = "default", ...props }) {
   const baseStyles =
-    "rounded-3xl px-2 2xl:px-6 py-1 2x:l:py-3 font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 text-lg";
+    "rounded-3xl w-full px-2 2xl:px-6 py-1 2x:l:py-3 font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 text-lg";
   let variantStyles = "";
 
   if (variant === "default") {
@@ -253,13 +254,13 @@ export default function PricingCards() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-cent bg-[#0D0F12]  py-16 px- w-full">
+    <div id="#pricing-section" className="min-h-screen flex flex-col items-center justify-cent bg-[#0D0F12]  py-16 px- w-full">
       <h1 className="text-gray-100 text-5xl font-bold text-center pb-20">Pricing </h1>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-24 max-w-full w-full">
         {plans.map((plan, idx) => (
           <div
             key={idx}
-            className={`${plan.color} relative rounded-3xl w-[85%] sm:w-[70%] lg:w-1/4  h-full p-8 2xl:p-10   shadow-lg hover:shadow-2xl transition-all border border-gray-300 flex flex-col justify-between`}
+            className={`${plan.color} price relative rounded-3xl w-[85%] sm:w-[70%] lg:w-1/4  h-full p-8 2xl:p-10   shadow-lg hover:shadow-2xl transition-all border border-gray-300 flex flex-col justify-between`}
             
           >
             {/* {plan.highlight && (
@@ -296,7 +297,9 @@ export default function PricingCards() {
               >
                 View Details
               </Button>
+              <Link to='/book-meeting'>
               <Button variant="outline">Get Started</Button>
+              </Link>
             </div>
           </div>
         ))}

@@ -219,14 +219,8 @@ import { BiBarChartAlt } from "react-icons/bi";
 import { TbAutomation, TbPlugConnected } from "react-icons/tb";
 import { FaRegLightbulb } from "react-icons/fa";
   import { Link } from "react-router-dom";
-const navLinks = [
-  "Products",
-  "Unmarshal 2.0",
-  "$MARSH",
-  "Roadmap",
-  "Company",
-  "Explorer",
-];
+import Navbar from "./Navbar";
+
 
 export default function Hero() {
 
@@ -274,35 +268,8 @@ export default function Hero() {
         </svg>
       ))}
       {/* Header */}
-      <header className="relative z-10 flex flex-wrap items-center justify-between px-5 sm:px-8 md:px-16 py-5 gap-4">
-        {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <span
-            style={{ fontFamily: "Philosopher" }}
-            className="text-lg sm:text-xl font-bold tracking-wide"
-          >
-            OverlapsAI
-          </span>
-        </div>
-
-        {/* Nav */}
-        <nav className="hidden lg:flex justify-center gap-4 text-sm">
-          {navLinks.map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="px-4 py-1 rounded-full hover:bg-[#16181b] transition text-gray-200 font-semibold"
-            >
-              {link}
-            </a>
-          ))}
-        </nav>
-
-        {/* Sign In */}
-        <button className="border border-white/25 rounded-full px-5 sm:px-6 py-2 text-sm font-medium bg-transparent hover:bg-white/5 transition whitespace-nowrap">
-          Sign In
-        </button>
-      </header>
+      
+      <Navbar/>
 
       {/* Hero Content */}
       <main className="relative z-10 flex flex-col items-center text-center mt-4 sm:mt-18  px-6">
@@ -310,7 +277,7 @@ export default function Hero() {
           ✦ POWERED BY AI ✦
         </span>
 
-        <h1 className="text-4xl  md:mt-8 sm:text-5xl lg:text-6xl 2xl:text-7xl font-semibold leading-tight mb-6 max-w-3xl sm:max-w-4xl 2xl:max-w-6xl mx-auto">
+        <h1 className="text-4xl cursor-hover md:mt-8 sm:text-5xl lg:text-6xl 2xl:text-7xl font-semibold leading-tight mb-6 max-w-3xl sm:max-w-4xl 2xl:max-w-6xl mx-auto">
           Most Reliable AI-Powered<br className="hidden sm:block" /> Automation
         </h1>
 
@@ -324,12 +291,12 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 justify-center items-center  md:mb-10">
           <Link to='/demo'>
-          <button className="bg-[#daff45] text-[#151c14] font-semibold text-base px-28 sm:px-10 py-3 rounded-full shadow-lg shadow-[#daff45]/10 tracking-tight hover:bg-lime-400 transition w-full sm:w-auto">
+          <button className=" transition-all duration-300 ease-in-out border border-white/25    hover:text-black hover:border-[#dafe45] hover:scale-105 bg-[#daff45]  text-[#151c14] font-semibold text-base px-28 sm:px-10 py-3 rounded-full shadow-lg shadow-[#daff45]/10 tracking-tight hover:bg-lime-400  w-full sm:w-auto">
             Demo
           </button>
           </Link>
             <Link to='/book-meeting'>
-          <button className="bg-white text-black font-semibold text-base px-16 sm:px-9 py-3 rounded-full shadow-md flex items-center justify-center gap-2 hover:bg-gray-100 transition w-full sm:w-auto">
+          <button className="bg-white transition-transform duration-300 ease-in-out hover:scale-105  text-black font-semibold text-base px-16 sm:px-9 py-3 rounded-full shadow-md flex items-center justify-center gap-2 hover:bg-gray-100  w-full sm:w-auto">
             GET STARTED
             <svg
               xmlns="http://www.w3.org/2000/svg"
