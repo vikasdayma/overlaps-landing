@@ -206,6 +206,8 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import animationData from "../assets/Lottie.json";
 gsap.registerPlugin(ScrollTrigger);
 
 const features = [
@@ -264,10 +266,22 @@ export default function Automation() {
   return (
     <div
       ref={sectionRef}
-      className="min-h-screen bg-[#0d0f12] flex items-center justify-center px-6 sm:px-8 md:px-16 py-16"
-    >
-      <div className="flex flex-col-reverse md:flex-row items-center lg:items-start w-full lg:max-w-8xl justify-between gap-8">
-        {/* Left Text Section */}
+      className="min-h-screen bg-[#0d0f12] flex flex-col items-center justify-center px-6 sm:px-8 md:px-16 py-16"
+    >   <h1 className="animate-on-scroll text-center lg:text-start text-white text-3xl md:text-4xl 2xl:text-6xl font-bold mb-4">
+            Let Your AI Handle the Busywork
+          </h1>
+
+        <div className="flex-1 flex justify-center items-center xl:-mt-20">
+        <Lottie
+        animationData={animationData}
+        loop={true}        // set false if you want it to play once
+        autoplay={true}    // automatically start playing
+        className="w-4/5 h-2/3  scale-110"
+      />
+          
+        </div>
+      {/* <div className="flex flex-col-reverse md:flex-row items-center lg:items-start w-full lg:max-w-8xl justify-between gap-8">
+        
         <div className="w-full sm:flex-1">
           <h1 className="animate-on-scroll text-center lg:text-start text-white text-3xl md:text-4xl 2xl:text-5xl font-bold mb-4">
             Let Your AI Handle the Busywork
@@ -298,22 +312,15 @@ export default function Automation() {
             border border-white/25    hover:text-black
              hover:border-[#dafe45] hover:scale-105 bg-[#daff45] 
               font-bold text-black w-full lg:w-full rounded-full
-               px-6 py-3 2xl:px-4 2xl:py-4 text-sm 2xl:text-lg transition">
+               px-6 py-3 2xl:px-4 2xl:py-4 text-sm 2xl:text-lg ">
               Automate My Tasks Now
             </button>
             </Link>
           </div>
         </div>
 
-        {/* Right Image Section */}
-        <div className="flex-1 flex justify-center items-center xl:-mt-16">
-          <img
-            src="AutomationRobot.png"
-            alt="Robot"
-            className="animate-on-scroll w-full h-full object-contain drop-shadow-2xl 2xl:max-w-[600px]"
-          />
-        </div>
-      </div>
+      
+      </div> */}
     </div>
   );
 }

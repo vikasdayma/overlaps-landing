@@ -6,6 +6,8 @@ import Footer from './Footer'
 import JoinCommunity from './JoinCommunity'
 import Navbar from './Navbar'
 import ScrollAnimations from './ScrollAnimation'
+import Testimonials from './Testimonials'
+import VideoRobot from './VideoRobot'
 
 
 
@@ -16,10 +18,11 @@ const Home = () => {
      
       <Hero />
       <PricingSection />
+ 
       <Automation/>
-      <JoinCommunity/>
+      <Testimonials/>
       <Footer/>
-
+ 
       
       
     </>

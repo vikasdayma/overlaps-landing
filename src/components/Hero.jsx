@@ -297,7 +297,7 @@ export default function Hero() {
           </Link>
             <Link to='/book-meeting'>
           <button className="bg-white transition-transform duration-300 ease-in-out hover:scale-105  text-black font-semibold text-base px-16 sm:px-9 py-3 rounded-full shadow-md flex items-center justify-center gap-2 hover:bg-gray-100  w-full sm:w-auto">
-            GET STARTED
+            Book Your Audit
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 -mr-1 sm:-mr-2"
