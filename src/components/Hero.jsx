@@ -290,7 +290,7 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 justify-center items-center  md:mb-10">
-          <Link to='/demo'>
+          <Link to='/loom'>
           <button className=" transition-all duration-300 ease-in-out border border-white/25    hover:text-black hover:border-[#dafe45] hover:scale-105 bg-[#daff45]  text-[#151c14] font-semibold text-base px-28 sm:px-10 py-3 rounded-full shadow-lg shadow-[#daff45]/10 tracking-tight hover:bg-lime-400  w-full sm:w-auto">
             Demo
           </button>

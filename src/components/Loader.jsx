@@ -6,7 +6,7 @@ export default function Loader() {
     <Lottie
       animationData={animationData}
       loop={true}
-      className="bg-black h-screen "
+      className="bg-black h-1/2 w-1/2 "
     />
   );
 }
