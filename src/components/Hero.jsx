@@ -230,7 +230,7 @@ export default function Hero() {
   { className: "bottom-32 left-1/2 -translate-x-1/2", icon: <circle cx="20" cy="20" r="16" fill="#fff" /> },
 ];
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-[#0d0f12] font-inter text-white">
+    <div id="home" className="relative min-h-screen w-full overflow-hidden bg-[#0d0f12] font-inter text-white">
       {/* ✅ Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] z-0" />
 

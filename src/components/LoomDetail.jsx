@@ -56,13 +56,14 @@
 //   );
 // }
 
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import animationData from "../lottie/Loader.json";
 import { FaLeftLong } from "react-icons/fa6";
 
+import gsap from "gsap";
 const loomLinks = {
   "financial-services": "https://www.loom.com/embed/2de6cdbbd43844cb83e96065ab68de48",
   "information-technology-and-services": "https://www.loom.com/embed/36207ae0d3094e0f9b75aeb03e7557c6",
@@ -161,7 +162,14 @@ export default function LoomDetail() {
           industry — enhancing efficiency, reducing effort, and accelerating business growth.
         </motion.p>
       </motion.div>
+   <Link to='/book-meeting'>
+      <button
 
+        className="border bg-[#daff45] mt-10  font-bold border-white/25 rounded-full px-5 sm:px-6 py-2 text-sm   transition whitespace-nowrap text-black"
+      >
+     Book Your Audit
+      </button>
+      </Link>
       {/* Back Button */}
    
     </div>

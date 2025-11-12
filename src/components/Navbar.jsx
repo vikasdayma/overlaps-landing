@@ -162,11 +162,17 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
+import { label } from "framer-motion/client";
 const Navbar = () => {
   const headerRef = useRef(null);
   const btnRef = useRef(null);
 
-  const navLinks = ["How it Works", "Service", "Feature", "Pricing"];
+  const navLinks = [
+    {label:"Home",tag:'#home'},
+    {label:"How it Works",tag:'#howitworks'},
+     {label:"About",tag:'#about'},
+      {label:"Pricing",tag:'#pricing'}
+    ];
 
   useEffect(() => {
     const links = headerRef.current.querySelectorAll("nav a");
@@ -254,10 +260,10 @@ const Navbar = () => {
         {navLinks.map((link) => (
           <a
             key={link}
-            href="#"
+            href={link.tag}
             className="px-4 py-1 rounded-full hover:bg-[#16181b] transition text-gray-200 font-semibold"
           >
-            {link}
+            {link.label}
           </a>
         ))}
       </nav>
@@ -268,7 +274,7 @@ const Navbar = () => {
         ref={btnRef}
         className="border  border-white/25 rounded-full px-5 sm:px-6 py-2 text-sm font-medium bg-transparent transition whitespace-nowrap text-white"
       >
-     Book Call
+    Sing in
       </button>
       </Link>
     </header>

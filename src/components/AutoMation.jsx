@@ -266,17 +266,19 @@ export default function Automation() {
   return (
     <div
       ref={sectionRef}
-      className="min-h-screen bg-[#0d0f12] flex flex-col items-center justify-center px-6 sm:px-8 md:px-16 py-16"
-    >   <h1 className="animate-on-scroll text-center lg:text-start text-white text-3xl md:text-4xl 2xl:text-6xl font-bold mb-4">
+      className="md:min-h-screen  relative bg-[#0d0f12] flex flex-col items-center justify-center px-6 sm:px-8 md:px-16 py-6 md:py-16"
+    > 
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] z-0" />
+      <h1 className="animate-on-scroll text-center lg:text-start text-white text-3xl md:text-4xl 2xl:text-6xl font-bold mb-4">
             Let Your AI Handle the Busywork
           </h1>
 
-        <div className="flex-1 flex justify-center items-center xl:-mt-20">
+        <div className="flex-1 flex justify-center items-center mt-10 md:mt-0 xl:-mt-20">
         <Lottie
         animationData={animationData}
         loop={true}        // set false if you want it to play once
         autoplay={true}    // automatically start playing
-        className="w-4/5 h-2/3  scale-110"
+        className=" w-full md:w-4/5 md:h-2/3  scale-110 bg-"
       />
           
         </div>

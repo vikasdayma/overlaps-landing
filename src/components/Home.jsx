@@ -9,6 +9,8 @@ import ScrollAnimations from './ScrollAnimation'
 import Testimonials from './Testimonials'
 import VideoRobot from './VideoRobot'
 import HowWeWorkFlow from './HowWeWork'
+import About from './About'
+
 
 
 
@@ -19,13 +21,14 @@ const Home = () => {
      
       <Hero />
        <Automation/>
+        <HowWeWorkFlow/>
+     
       <PricingSection />
- 
+      <About/>
      
       <Testimonials/>
       <Footer/>
-      <HowWeWorkFlow/>
- 
+   
       
       
     </>

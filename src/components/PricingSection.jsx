@@ -20,7 +20,7 @@ const PricingSection = () => {
       true,  // 1 AI chatbot
       true,  // Automated onboarding sequences
       true,  // Monthly performance insights
-      true,  // Up to 2 tool integrations
+      false,  // Up to 2 tool integrations
       false, // Advanced analytics dashboard
       false, // Strategy reviews
       false, // Priority support
@@ -40,8 +40,8 @@ const PricingSection = () => {
       true,  // AI-powered lead scoring
       true,  // Full API & webhook integrations
       true,  // Advanced analytics dashboard
-      true,  // Bi-monthly strategy sessions
-      true,  // Priority support
+      false,  // Bi-monthly strategy sessions
+      false,  // Priority support
     ],
   },
   {
@@ -91,7 +91,7 @@ const featureList = [
 ];
 
   return (
-    <div className="bg-[#0d0f12] pt-20 relative text-white min-h-screen flex flex-col items-center  w-full">
+    <div id='pricing' className="bg-[#0d0f12] pt-20 relative text-white min-h-screen flex flex-col items-center  w-full">
       {/* Background grid pattern */}
       {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] z-0" /> */}
 
@@ -105,11 +105,11 @@ const featureList = [
       </p>
 
       {/* Pricing Cards */}
-      <div className="flex flex-col md:flex-row justify-evenly gap-8 mb-16 z-10">
+      <div className="flex bg flex-col lg:flex-row p-6 justify-evenly gap-8 mb-16 z-10">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`${plan.color} relative rounded-2xl w-72 2xl:w-96 p-8 px-10 2xl:p-16 text-black shadow-xl`}
+            className={`${plan.color} relative rounded-2xl w-full lg:w-72 2xl:w-96 p-8 px-10 2xl:p-16 text-black shadow-xl`}
           >
             {plan.tag && (
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-black text-xs px-3 py-1 rounded-full shadow-md font-semibold">
@@ -129,7 +129,7 @@ const featureList = [
       </div>
 
       {/* Features Table */}
-      <div className="w-full max-w-6xl 2xl:max-w-full p-0 px-7 2xl:p-16 rounded-xl overflow-hidden z-10">
+      <div className="w-full max-w-6xl 2xl:max-w-full p-0 2xl:p-16 rounded-xl overflow-hidden z-10">
         <div className="p-6 border-b border-gray-700 text-lg font-semibold">
           Key Features
         </div>
