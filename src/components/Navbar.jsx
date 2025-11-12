@@ -268,7 +268,7 @@ const Navbar = () => {
         ref={btnRef}
         className="border  border-white/25 rounded-full px-5 sm:px-6 py-2 text-sm font-medium bg-transparent transition whitespace-nowrap text-white"
       >
-        Sign In
+     Book Call
       </button>
       </Link>
     </header>

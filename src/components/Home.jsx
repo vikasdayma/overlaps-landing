@@ -8,6 +8,7 @@ import Navbar from './Navbar'
 import ScrollAnimations from './ScrollAnimation'
 import Testimonials from './Testimonials'
 import VideoRobot from './VideoRobot'
+import HowWeWorkFlow from './HowWeWork'
 
 
 
@@ -17,11 +18,13 @@ const Home = () => {
      <ScrollAnimations/>
      
       <Hero />
+       <Automation/>
       <PricingSection />
  
-      <Automation/>
+     
       <Testimonials/>
       <Footer/>
+      <HowWeWorkFlow/>
  
       
       
