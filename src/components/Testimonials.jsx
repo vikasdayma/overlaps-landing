@@ -245,7 +245,7 @@ const testimonials = [
     role: "CTO, FinEdge Technologies",
     image:
       "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=100&q=80",
-    text: "The platform’s automation tools are next-level. We integrated multiple CRMs seamlessly. Totally worth the investment!",
+    text: "The platform’s automation tools are next-level. We integrated multiple CRMs seamlessly. Totally worth the  Best investment!",
     rating: 5,
   },
   {
@@ -253,7 +253,7 @@ const testimonials = [
     role: "Marketing Head, Growthify",
     image:
       "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=100&q=80",
-    text: "Our lead conversion improved by 60% after adopting Voice Overflow’s AI solutions. The insights are gold for marketing decisions.",
+    text: "Our lead conversion improved by 60% after adopting Voice Overflow’s AI solutions. The insights are gold for marketing  Bexdecisions.",
     rating: 5,
   },
   {
@@ -277,7 +277,7 @@ const Testimonials = () => {
       {/* Subtle grid background */}
    
 
-      <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+      <div className=" max-w-6xl  p-0 2xl:p-20 2xl:max-w-full 2xl:w-full  mx-auto px-6 text-center relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -301,6 +301,7 @@ const Testimonials = () => {
             swiperRef.current = swiper;
           }}
           breakpoints={{
+             1540: { slidesPerView: 4},
             768: { slidesPerView: 3},
             480: { slidesPerView: 1 },
           }}
