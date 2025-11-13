@@ -105,7 +105,7 @@ export default function Calendly() {
   }, []);
 
   return (
-    <div className="bg-[#0d0f12] text-white flex flex-col items-center justify-center">
+    <div className="bg-[#0d0f12] p-4 md:p-0 text-white flex flex-col items-center justify-center">
       {/* Animated background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:120px_120px] z-0" />
 
